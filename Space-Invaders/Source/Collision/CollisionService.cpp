@@ -53,7 +53,6 @@ namespace Collision
 		return (index_i < collider_list.size() && index_j < collider_list.size() &&
 			collider_list[index_i] != nullptr && collider_list[index_j] != nullptr);
 	}
-
 	void CollisionService::AddCollider(ICollider* collider)
 	{
 		collider_list.push_back(collider);
