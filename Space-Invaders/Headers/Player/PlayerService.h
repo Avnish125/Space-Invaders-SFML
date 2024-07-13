@@ -1,17 +1,26 @@
 #pragma once
-#include"C:\Users\avnis\OneDrive\Desktop\Avnish Space Invaders\Space-Invaders-SFML\Space-Invaders\Headers\Player\PlayerController.h"
 namespace Player
 {
+	class PlayerController;
+	
 	class PlayerService
 	{
 
 	private:
 		PlayerController* player_controller;
+
 	public:
 		PlayerService(Entity::EntityType owner_type);
-		~PlayerService();
+		virtual ~PlayerService();
+		
 		void Initialize();
 		void Update();
 		void Render();
+
+		void EnableShield();
+		void EnableRapidFire();
+		void EnableTrippleLaser();
+	
+		void Reset();
 	};
 }

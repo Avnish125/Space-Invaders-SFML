@@ -32,5 +32,8 @@ namespace Player
 		void Initialize(PlayerController* controller);
 		void Update();
 		void Render();
+
+		//Getter & Setters
+		const sf::Sprite & GetPlayerSprite();
 	};
 }
